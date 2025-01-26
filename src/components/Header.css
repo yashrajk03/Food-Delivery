@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:lightgreen;
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: lightgreen;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+}
+#logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+#logo:hover{
+    font-size:1.6rem;
+    color: #f1356d;
+}
+#menu{
+    display:flex;
+    gap:20px;
+    color:black;
+    
+}
+#menu li{
+    display: inline-block;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+#menu li a{
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+}
+#menu li:hover{
+    color: #f1356d;
+}
+button{
+    margin-left: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #f1356d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+    
+
+ button:hover {
+    background-color: #ff4d4d; /* Slightly darker red on hover */
+}

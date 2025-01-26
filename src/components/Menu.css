@@ -1,0 +1,121 @@
+/* Menu.css */
+
+/* General styling for the menu container */
+.menu {
+  display: grid;
+  grid-template-columns: 1fr; /* Single-column layout by default */
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 30px auto; /* Center the menu container */
+}
+
+/* Block1 Styling */
+.block1 {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.block1 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.block1 p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.block1 button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #0056b3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.block1 button:hover {
+  background-color: #003d7a;
+  transform: scale(1.05);
+}
+
+/* Block2 Styling (empty placeholder) */
+.block2 {
+  min-height: 100px;
+  background-color: #ffffff;
+  border: 2px dashed #007bff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #007bff;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Block3 Styling */
+.block3 {
+  background-color: #ffdd57;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.block3 h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.block3 p {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .menu {
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout for larger screens */
+  }
+
+  .block1 {
+    grid-column: span 2; /* Make Block1 span both columns */
+  }
+}
+
+
+.menu .block1 {
+  margin-bottom: 20px; /* Add some space below the first block */
+}
+.menu .block1,
+.menu .block3 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+  transition: transform 0.2s ease;
+}
+button.join{
+  background-color: #f1356d;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
